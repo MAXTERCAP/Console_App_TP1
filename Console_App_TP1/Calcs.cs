@@ -20,8 +20,19 @@ namespace Console_App_TP1
         {
             return a + b;
 
-         }
-        
+        }
+
+
+
+        public static string cadenacortada(string cadena)
+        {
+
+            string resultado = cadena.Substring( 0, cadena.Length - 4 );
+            return resultado;
+
+
+        }
+
 
 
 

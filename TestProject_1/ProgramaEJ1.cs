@@ -26,5 +26,27 @@ namespace TestProject_1
 
 
         }
+
+        [TestMethod]
+        public void Testcadena()
+        {
+            // Dado            
+            string a = "diversos";
+            string esperado = "dive";            
+            
+            string resultado = Calcs.cadenacortada(a);
+            
+            // comparación
+                        
+            Assert.AreEqual(esperado, resultado);
+
+        }
+
+
+
+
+
+
+
     }
 }
