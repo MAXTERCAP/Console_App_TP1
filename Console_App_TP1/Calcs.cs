@@ -99,6 +99,32 @@ namespace Console_App_TP1
 
 
 
+        //  Ejercicio Casteo 1
+
+        public static int ConvertirDoubleAInt(double a)
+        {
+            return (int)a;
+        }
+
+
+
+        //  Ejercicio Casteo 2
+
+        public static decimal ConvertirIntADecimal(int a)
+        {
+            return a;
+        }
+
+
+        //  Ejercicio Casteo 3
+        public static short ConvertirIntAShort(int a)
+        {
+            return (short)a;
+        }
+
+
+
+
 
     }
 }
