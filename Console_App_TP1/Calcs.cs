@@ -34,8 +34,8 @@ namespace Console_App_TP1
         {
 
             string resultado = cadena.Substring( 0, cadena.Length - 4 );
-            return resultado;
 
+            return resultado;
 
         }
 
@@ -100,9 +100,6 @@ namespace Console_App_TP1
 
 
 
-
-
-
         //  Ejercicio Casteo 1
 
         public static int ConvertirDoubleAInt(double a)
@@ -129,8 +126,7 @@ namespace Console_App_TP1
 
 
 
-
-        //  Ejercicio Switch 1
+        //  Ejercicio Switch 
 
         public static string QueColorEs(Color color)
         {
@@ -166,12 +162,6 @@ namespace Console_App_TP1
                 return "Error";
             }
         }
-
-
-
-
-
-
 
 
     }
