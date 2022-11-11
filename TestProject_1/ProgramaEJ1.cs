@@ -1,14 +1,15 @@
 using Console_App_TP1;
 using Microsoft.VisualStudio.TestPlatform.TestHost;
+using System.Drawing;
 using System.Security.Cryptography;
 using static System.Net.Mime.MediaTypeNames;
+using Color = Console_App_TP1.Color;
 
 namespace TestProject_1
 {
     [TestClass]
     public class ProgramaEJ1
     {
-
 
         //  Test Ejercicio 1
 
@@ -67,13 +68,11 @@ namespace TestProject_1
 
 
 
-
         //  Test Ejercicio 4 y 5  (no son necesarios)
 
 
 
         //  Test Ejercicio Enumeración 1 y 2
-
 
         [TestMethod]
         public void Enumerar()
@@ -194,11 +193,13 @@ namespace TestProject_1
         {
             // Dado
             var number = 10;
+
             decimal esperado = 10;
-            // Cuando
+            
             decimal resultado = Calcs.ConvertirIntADecimal(number);
 
-            // comparación            
+            // comparación
+            // 
             Assert.AreEqual(esperado, resultado);
         }
 
@@ -210,17 +211,60 @@ namespace TestProject_1
         public void Casteo3()
         {
             // Dado
-            int number = 443444;
+            int numbero = 443444;
 
             short esperado = -15308;
             
-            short resultado = Calcs.ConvertirIntAShort(number);
+            short resultado = Calcs.ConvertirIntAShort(numbero);
 
             // comparación
-            // 
+            
             Assert.AreEqual(esperado, resultado);
         }
 
+
+
+        // Test Ejercicio Switch 1
+
+        [TestMethod]
+        public void Switch1()
+        {
+            // Dado
+
+            Color miColor = Color.Azul;
+
+            string esperado = "Este es Azul";
+            
+            string resultado = Calcs.QueColorEs(miColor);
+
+            // comparación            
+
+            Assert.AreEqual(esperado, resultado);
+
+        }
+
+
+
+
+        // Test Ejercicio Sentencia if y else 
+
+
+        [TestMethod]
+        public void ifyelse()
+        {
+            // Dado
+
+            int numero = 20;
+
+            string esperado = "Es mayor a 10";
+            
+            string resultado = Calcs.EsMayorA(numero);
+
+            // comparación
+            
+            Assert.AreEqual(esperado, resultado);
+
+        }
 
 
 

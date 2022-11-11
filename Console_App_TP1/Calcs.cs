@@ -8,9 +8,13 @@ using System.Threading.Tasks;
 
 namespace Console_App_TP1
 {
+    enum Dias { Domingo = 1, Lunes = 2, Martes = 3, Miercoles = 4, Jueves = 5, Viernes = 6, Sabado = 7 }
+    public enum Color { Blanco, Azul, Negro }
+
     public class Calcs
     {
-        enum Dias {Domingo=1,Lunes=2,Martes=3,Miercoles=4,Jueves=5,Viernes=6,Sabado=7}
+        
+
         static void Main(string[] args)
         {
         }
@@ -117,10 +121,54 @@ namespace Console_App_TP1
 
 
         //  Ejercicio Casteo 3
+
         public static short ConvertirIntAShort(int a)
         {
             return (short)a;
         }
+
+
+
+
+        //  Ejercicio Switch 1
+
+        public static string QueColorEs(Color color)
+        {
+            switch (color)
+            {
+                case Color.Blanco:
+                    return "Este es Blanco";
+
+                case Color.Azul:
+                    return "Este es Azul";
+
+                case Color.Negro:
+                    return "Este es Negro";
+
+                default:
+                    return "Color no encontrado";
+            }
+        }
+
+
+
+
+        //  Ejercicio Sentencia if y else 
+
+        public static string EsMayorA(int a)
+        {
+            if (a > 10)
+            {
+                return "Es mayor a 10";
+            }
+            else
+            {
+                return "Error";
+            }
+        }
+
+
+
 
 
 
