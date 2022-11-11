@@ -10,7 +10,7 @@ namespace Console_App_TP1
 {
     public class Calcs
     {
-        enum Dia {Domingo=1,Lunes=2,Martes=3,Miercoles=4,Jueves=5,Viernes=6,Sabado=7}
+        enum Dias {Domingo=1,Lunes=2,Martes=3,Miercoles=4,Jueves=5,Viernes=6,Sabado=7}
         static void Main(string[] args)
         {
         }
@@ -43,6 +43,28 @@ namespace Console_App_TP1
 
             return hora;
         }
+
+
+        // Ejercicio  4 y 5
+
+
+        // Comentario de una sola línea
+
+        /**
+         * Comentario de varias líneas
+         */
+
+
+
+
+        //  Ejercicio Enumeraciones 1
+
+        public static string DiasSemana(int i)
+        {
+            Dias dia = (Dias)i;
+            return "Hoy es día " + dia.ToString();
+        }
+
 
 
 
