@@ -57,13 +57,44 @@ namespace Console_App_TP1
 
 
 
-        //  Ejercicio Enumeraciones 1
+        //  Ejercicio Enumeraciones 1 y 2
 
         public static string DiasSemana(int i)
         {
             Dias dia = (Dias)i;
             return "Hoy es día " + dia.ToString();
         }
+
+
+
+
+        //  Ejercicio Conversiones 1
+
+
+        public static bool Conver_V_F(int a)
+        {
+            return Convert.ToBoolean(a);
+        }
+
+
+
+        //  Ejercicio Conversiones 2
+
+        public static bool BoolParseado(string a)
+        {
+            return bool.Parse(a);
+        }
+
+
+
+        //  Ejercicio Conversiones 3
+
+        public static bool Parseado(string a)
+        {
+            return bool.TryParse(a, out bool resultado);
+        }
+
+
 
 
 

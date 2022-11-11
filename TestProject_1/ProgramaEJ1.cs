@@ -74,16 +74,16 @@ namespace TestProject_1
 
 
 
-        //  Test Ejercicio Enumeración 1
+        //  Test Ejercicio Enumeración 1 y 2
 
 
         [TestMethod]
         public void Enumera1()
         {
             // Dado            
-            string esperado = "Hoy es día Domingo";
+            string esperado = "Hoy es día Lunes";
                         
-            string resultado = Calcs.DiasSemana(1);
+            string resultado = Calcs.DiasSemana(2);
 
             // comparación            
             Assert.AreEqual(esperado, resultado);
@@ -91,7 +91,81 @@ namespace TestProject_1
 
 
 
+        //  Test Ejercicio Conversiones 1 parte A
 
+        [TestMethod]
+        public void Conver1()
+        {
+            // Dado
+
+            int verdadero = 1;
+
+            bool esperado = true;
+            
+            bool resultado = Calcs.Conver_V_F(verdadero);
+
+            // comparación
+             
+            Assert.AreEqual(esperado, resultado);
+        }
+
+
+
+        //  Test Ejercicio Conversiones 1  parte B
+
+        [TestMethod]
+        public void Conver2()
+        {
+            // Dado
+            int falso = 0;
+
+            bool esperado = false;
+            
+            bool resultado = Calcs.Conver_V_F(falso);
+
+            // comparación
+
+            Assert.AreEqual(esperado, resultado);
+        }
+
+
+
+        //  Test Ejercicio Conversiones 2
+
+        [TestMethod]
+        public void Conver3()
+        {
+            // Dado
+            string falso = "false";
+            bool esperado = false;
+           
+
+            bool resultado = Calcs.BoolParseado(falso);
+
+            // comparación
+            
+            Assert.AreEqual(esperado, resultado);
+
+        }
+
+
+
+
+        [TestMethod]
+        public void Conver4()
+        {
+            // Dado
+            string verdadero = "true";
+
+            bool esperado = true;
+
+            
+            bool resultado = Calcs.BoolParseado(verdadero);
+
+            // comparación
+
+            Assert.AreEqual(esperado, resultado);
+        }
 
 
 
