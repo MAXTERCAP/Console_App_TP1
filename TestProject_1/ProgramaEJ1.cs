@@ -44,6 +44,21 @@ namespace TestProject_1
 
 
 
+        [TestMethod]
+        public void saberhora()
+        {
+            // Dado            
+            
+            string esperado = DateTime.Now.ToString("dd-MM-yy hh:mm");
+                        
+            string resultado = Calcs.quehoraes();
+
+            // Entonces
+            
+            Assert.AreEqual(esperado, resultado);
+        }
+
+
 
 
 

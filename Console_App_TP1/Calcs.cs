@@ -15,6 +15,7 @@ namespace Console_App_TP1
         {
         }
 
+        // Ejercicio 1
                 
         public static int Sumar(int a, int b)
         {
@@ -23,6 +24,7 @@ namespace Console_App_TP1
         }
 
 
+        // Ejercicio 2
 
         public static string cadenacortada(string cadena)
         {
@@ -33,6 +35,14 @@ namespace Console_App_TP1
 
         }
 
+
+        // Ejercicio 3
+        public static string quehoraes()
+        {
+            string hora = DateTime.Now.ToString("dd-MM-yy hh:mm");
+
+            return hora;
+        }
 
 
 
