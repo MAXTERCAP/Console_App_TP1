@@ -24,12 +24,9 @@ namespace TestProject_1
 
             int calculado  = Calcs.Sumar(a, b);
 
-
             // comparación
 
             Assert.AreEqual(esperado, calculado);
-
-
 
         }
 
@@ -69,9 +66,9 @@ namespace TestProject_1
         }
 
 
+
+
         //  Test Ejercicio 4 y 5  (no son necesarios)
-
-
 
 
 
@@ -168,9 +165,6 @@ namespace TestProject_1
 
             Assert.AreEqual(esperado, resultado);
         }
-
-
-
 
 
 
