@@ -224,48 +224,5 @@ namespace TestProject_1
 
 
 
-        // Test Ejercicio Switch 
-
-        [TestMethod]
-        public void Switch1()
-        {
-            // Dado
-
-            Color miColor = Color.Azul;
-
-            string esperado = "Este es Azul";
-            
-            string resultado = Calcs.QueColorEs(miColor);
-
-            // comparación            
-
-            Assert.AreEqual(esperado, resultado);
-
-        }
-
-
-
-
-        // Test Ejercicio Sentencia if y else 
-
-
-        [TestMethod]
-        public void ifyelse()
-        {
-            // Dado
-
-            int numero = 20;
-
-            string esperado = "Es mayor a 10";
-            
-            string resultado = Calcs.EsMayorA(numero);
-
-            // comparación
-            
-            Assert.AreEqual(esperado, resultado);
-
-        }
-
-
     }
 }
