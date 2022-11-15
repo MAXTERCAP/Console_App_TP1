@@ -225,7 +225,22 @@ namespace Console_App_TP1
         }
 
 
+        //18
 
+        //  Ejercicio Nº 7 del TP1
+
+
+        public static string While_Incrementa_x5(int numero)
+        {
+            numero = 0;
+
+            while (numero <= 50)
+            {
+                numero = numero + 5;
+            }
+            return "El valor de numero es de: " + numero;
+
+        }
 
     }
 }

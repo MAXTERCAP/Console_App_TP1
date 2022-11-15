@@ -333,9 +333,22 @@ namespace TestProject_1
 
 
 
+        // Test Ejercicio Nº 7 del TP1
 
+        [TestMethod]
+        public void While_Incrementa_x5()
+        {
+            // Dado
 
+            int numero = 55;
 
+            string esperado = "El valor de numero es de: 55";
+
+            // Cuando
+            string resultado = Calcs.While_Incrementa_x5(numero);
+            // Entonces            
+            Assert.AreEqual(esperado, resultado);
+        }
 
 
     }
