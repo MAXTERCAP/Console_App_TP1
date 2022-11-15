@@ -269,5 +269,24 @@ namespace TestProject_1
         }
 
 
+
+        [TestMethod]
+        public void Prueba_Lazo_for()
+        {
+            // Dado
+            int number = 11;
+
+            string esperado = "El valor es: 11";
+
+            string resultado = Calcs.Prueba_Lazo_for(number);
+
+            // Entonces            
+            Assert.AreEqual(esperado, resultado);
+
+
+
+
+        }
+
     }
 }

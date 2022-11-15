@@ -59,7 +59,7 @@ namespace Console_App_TP1
          */
 
 
-
+        //6
 
         //  Ejercicio Enumeraciones 1 y 2
 
@@ -70,7 +70,7 @@ namespace Console_App_TP1
         }
 
 
-
+        //7
 
         //  Ejercicio Conversiones 1
 
@@ -81,6 +81,7 @@ namespace Console_App_TP1
         }
 
 
+        //8
 
         //  Ejercicio Conversiones 2
 
@@ -90,6 +91,7 @@ namespace Console_App_TP1
         }
 
 
+        //9
 
         //  Ejercicio Conversiones 3
 
@@ -99,6 +101,7 @@ namespace Console_App_TP1
         }
 
 
+        //10
 
         //  Ejercicio Casteo 1
 
@@ -108,6 +111,7 @@ namespace Console_App_TP1
         }
 
 
+        //11
 
         //  Ejercicio Casteo 2
 
@@ -117,6 +121,8 @@ namespace Console_App_TP1
         }
 
 
+        //12
+
         //  Ejercicio Casteo 3
 
         public static short ConvertirIntAShort(int a)
@@ -125,6 +131,7 @@ namespace Console_App_TP1
         }
 
 
+        //13
 
         //  Ejercicio Switch 
 
@@ -147,7 +154,7 @@ namespace Console_App_TP1
         }
 
 
-
+        //14
 
         //  Ejercicio Sentencia if y else 
 
@@ -163,6 +170,28 @@ namespace Console_App_TP1
             }
         }
 
+
+
+
+        //15
+
+
+        //  Ejercicio prueba de lazo for
+
+
+        public static string Prueba_Lazo_for(int numero)
+        {
+            numero = 0;
+            
+            for(int i = 0; i <= 10; i++)
+            {
+
+                numero  = numero + 1;
+
+            }
+
+            return "El valor es: " + numero;
+        }
 
 
 
