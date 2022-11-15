@@ -269,24 +269,46 @@ namespace TestProject_1
         }
 
 
+        // Test Ejercicio Lazo for 
+
 
         [TestMethod]
         public void Prueba_Lazo_for()
         {
             // Dado
-            int number = 11;
+
+            int numero = 11;
 
             string esperado = "El valor es: 11";
 
-            string resultado = Calcs.Prueba_Lazo_for(number);
+            string resultado = Calcs.Prueba_Lazo_for(numero);
 
             // Entonces            
             Assert.AreEqual(esperado, resultado);
 
+        }
 
 
+        // Test Ejercicio Lazo While 
+
+        [TestMethod]
+        public void Prueba_LazoWhile()
+        {
+
+            // Dado
+
+            int numero = 100;
+
+            string esperado = "El valor de numero es de: 100";
+            
+            string resultado = Calcs.Prueba_LazoWhile(numero);
+
+            // Entonces            
+
+            Assert.AreEqual(esperado, resultado);
 
         }
 
+            
     }
 }

@@ -186,7 +186,7 @@ namespace Console_App_TP1
             for(int i = 0; i <= 10; i++)
             {
 
-                numero  = numero + 1;
+                numero = numero + 1;
 
             }
 
@@ -195,6 +195,22 @@ namespace Console_App_TP1
 
 
 
+        //16
+
+        //  Ejercicio de prueba de lazo While
+
+
+        public static string Prueba_LazoWhile(int numero)
+        {
+            numero = 0;
+
+            while (numero < 100)
+            {
+                numero = numero + 10;
+            }
+            return "El valor de numero es de: " + numero;
+
+        }
 
 
 
