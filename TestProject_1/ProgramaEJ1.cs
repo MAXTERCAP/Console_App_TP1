@@ -309,6 +309,36 @@ namespace TestProject_1
 
         }
 
+
+
+
+        // Test Ejercicio de Try Parseado
+
+
+
+        [TestMethod]
+        public void Try_Parseado()
+        {
+            // Dado
+
+            string falso = "falsete";
+
+            bool esperado = false;
+                       
+            bool resultado = Calcs.Try_Parseado(falso);
+
+            // Entonces
             
+            Assert.AreEqual(esperado, resultado);
+
+        }
+
+
+
+
+
+
+
+
     }
 }

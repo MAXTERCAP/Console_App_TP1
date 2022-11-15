@@ -197,7 +197,7 @@ namespace Console_App_TP1
 
         //16
 
-        //  Ejercicio de prueba de lazo While
+        //  Ejercicio prueba de lazo While
 
 
         public static string Prueba_LazoWhile(int numero)
@@ -209,6 +209,18 @@ namespace Console_App_TP1
                 numero = numero + 10;
             }
             return "El valor de numero es de: " + numero;
+
+        }
+
+
+        //17
+
+        //  Ejercicio prueba de Try Parseado
+
+        public static bool Try_Parseado(string a)
+        {
+
+            return bool.TryParse(a, out bool resultado);
 
         }
 
